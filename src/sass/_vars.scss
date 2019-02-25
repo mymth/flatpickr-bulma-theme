@@ -1,0 +1,41 @@
+$flatpickr-font-size: $size-normal !default;
+$flatpickr-month-font-size: $size-medium !default;
+$flatpickr-line-height: 1.5 !default;
+
+$flatpickr-bezier: cubic-bezier(0.23, 1, 0.32, 1);
+$flatpickr-slide-time: 400ms;
+
+// calendar width calculation
+$flatpickr-day-size: 2.5rem !default;
+$flatpickr-days-width: $flatpickr-day-size * 7;
+$flatpickr-calendar-width: calc(#{$flatpickr-days-width} + 2px);
+
+$flatpickr-month-nav-height: 2.25rem !default;
+$flatpickr-weekdays-height: $size-small * 1.5 !default;
+$flatpickr-time-height: 2.25rem;
+
+// Colors
+$flatpickr-calendar-background: $white !default;
+$flatpickr-calendar-border-color: rgba($black, 0.1) !default;
+$flatpickr-calendar-shadow: 0 2px 3px $flatpickr-calendar-border-color !default;
+
+$flatpickr-month-background: transparent !default;
+$flatpickr-month-foreground: $text-strong !default;
+$flatpickr-arrow-hover-color: $red !default;
+
+$flatpickr-weekdays-background: transparent !default;
+$flatpickr-weekdays-foreground: $text-light !default;
+
+$flatpickr-day-foreground: $text !default;
+$flatpickr-day-hover-background: $light !default;
+
+$flatpickr-today-color: $primary !default;
+$flatpickr-today-fg-color: $white !default;
+$flatpickr-selected-day-background: $link !default;
+$flatpickr-selected-day-foreground: $white !default;
+
+$flatpickr-disabled-color: $text-light !default;
+$flatpickr-disabled-border-color: transparent !default;
+$flatpickr-disabled-day-foreground: $grey-lighter !default;
+
+$flatpickr-inverted-bg: invert($flatpickr-calendar-background);

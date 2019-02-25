@@ -1,0 +1,88 @@
+$flatpickr-scbtns-background: $background !default;
+$flatpickr-scbtns-foreground: $flatpickr-day-foreground !default;
+$flatpickr-scbtns-button-font-size: $size-small !default;
+$flatpickr-scbtns-button-line-height: 1.5 !default;
+
+$flatpickr-scbtns-button-color: $grey-darker !default;
+$flatpickr-scbtns-button-background-color: $white !default;
+
+$flatpickr-scbtns-button-border: 1px solid $grey-lighter !default;
+$flatpickr-scbtns-button-border-radius: $radius-small !default;
+
+$flatpickr-scbtns-button-padding: calc(0.375em - 1px) 0.75em !default;
+
+$flatpickr-scbtns-button-hover-color: $link-hover !default;
+$flatpickr-scbtns-button-hover-border-color: $link-hover-border !default;
+
+$flatpickr-scbtns-button-focus-color: $link-focus !default;
+$flatpickr-scbtns-button-focus-border-color: $link-focus-border !default;
+$flatpickr-scbtns-button-focus-box-shadow: 0 0 0 0.125em rgba($link, 0.25) !default;
+
+$flatpickr-scbtns-button-active-color: $link-active !default;
+$flatpickr-scbtns-button-active-border-color: $link-active-border !default;
+
+.shortcut-buttons-flatpickr-wrapper {
+  display: flex;
+  padding: 0.5rem 0.5rem 0;
+  background-color: $flatpickr-scbtns-background;
+  color: $flatpickr-scbtns-foreground;
+
+  > .shortcut-buttons-flatpickr-label {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 0.5rem 0.5rem 0.125rem;
+  }
+
+  > .shortcut-buttons-flatpickr-buttons {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+.shortcut-buttons-flatpickr-button {
+  background-color: $flatpickr-scbtns-button-background-color;
+  border: $flatpickr-scbtns-button-border;
+  border-radius: $flatpickr-scbtns-button-border-radius;
+  padding: $flatpickr-scbtns-button-padding;
+  font-size: $flatpickr-scbtns-button-font-size;
+  color: $flatpickr-scbtns-button-color;
+  line-height: $flatpickr-scbtns-button-line-height;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $flatpickr-scbtns-button-hover-border-color;
+    color: $flatpickr-scbtns-button-hover-color;
+  }
+
+  &:focus {
+    @extend %no-outline;
+
+    border-color: $flatpickr-scbtns-button-focus-border-color;
+    color: $flatpickr-scbtns-button-focus-color;
+
+    &:not(:active) {
+      box-shadow: $flatpickr-scbtns-button-focus-box-shadow;
+    }
+  }
+
+  &:active {
+    @extend %no-outline;
+
+    border-color: $flatpickr-scbtns-button-active-border-color;
+    color: $flatpickr-scbtns-button-active-color;
+  }
+
+  %no-outline {
+    outline: none;
+  }
+
+  .shortcut-buttons-flatpickr-buttons > & {
+    margin-bottom: 0.5rem;
+
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "stylelint-config-sass-guidelines"
+  ],
+  "rules": {
+    "max-nesting-depth": 4,
+  	"selector-class-pattern": ".",
+    "selector-list-comma-newline-after": null,
+  	"selector-max-compound-selectors": 5,
+	  "selector-no-qualifying-type": [true, {"ignore": ["attribute", "class"]}],
+    "order/properties-alphabetical-order": null
+  },
+  "ignoreFiles": ["dist/**", "node_modules"]
+}

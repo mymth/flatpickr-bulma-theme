@@ -1,0 +1,61 @@
+[dir='rtl'] {
+  .flatpickr-calendar {
+    direction: rtl;
+  }
+
+  %flatpickr-rtl-left-side-to-right {
+    left: auto;
+    right: 0;
+  }
+
+  %flatpickr-rtl-right-side-to-left {
+    left: 0;
+    right: auto;
+  }
+
+  %flatpickr-rtl-prev-next-month-button {
+    transform: scaleX(-1);
+  }
+
+  .flatpickr-prev-month {
+    @extend %flatpickr-rtl-left-side-to-right;
+    @extend %flatpickr-rtl-prev-next-month-button;
+  }
+
+  .flatpickr-next-month {
+    @extend %flatpickr-rtl-right-side-to-left;
+    @extend %flatpickr-rtl-prev-next-month-button;
+  }
+
+  .numInputWrapper {
+    .arrowUp, .arrowDown {
+      @extend %flatpickr-rtl-right-side-to-left;
+    }
+  }
+
+  .dayContainer + .dayContainer {
+    box-shadow: 1px 0 0 $flatpickr-calendar-border-color;
+  }
+
+  .flatpickr-day {
+    &.endRange:not(.startRange) {
+      border-radius: 50px 0 0 50px;
+    }
+
+    &.startRange:not(.endRange) {
+      border-radius: 0 50px 50px 0;
+    }
+  }
+
+  .flatpickr-weeks {
+    box-shadow: -1px 0 0 $flatpickr-calendar-border-color;
+  }
+
+  .flatpickr-time {
+    direction: ltr;
+  }
+
+  .flatpickr-am-pm {
+    order: -1;
+  }
+}

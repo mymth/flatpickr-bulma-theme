@@ -1,0 +1,22 @@
+$flatpickr-confirm-height: 2.25rem !default;
+$flatpickr-confirm-background: $background !default;
+
+.flatpickr-confirm {
+  height: $flatpickr-confirm-height;
+  max-height: 0;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: $flatpickr-confirm-background;
+
+  svg path {
+    fill: inherit;
+  }
+
+  &.visible {
+    max-height: $flatpickr-confirm-height;
+    visibility: visible;
+  }
+}
