@@ -2,9 +2,12 @@
     height: 2.25rem;
     max-height: 0;
     visibility: hidden;
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
     cursor: pointer;
     background: whitesmoke;
 }

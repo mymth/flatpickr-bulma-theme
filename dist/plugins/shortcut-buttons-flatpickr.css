@@ -1,4 +1,5 @@
 .shortcut-buttons-flatpickr-wrapper {
+    display: -webkit-box;
     display: flex;
     padding: 0.5rem 0.5rem 0;
     background-color: whitesmoke;
@@ -7,15 +8,22 @@
 
 .shortcut-buttons-flatpickr-wrapper > .shortcut-buttons-flatpickr-label {
     align-content: center;
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     padding: 0 0.5rem 0.5rem 0.125rem;
 }
 
 .shortcut-buttons-flatpickr-wrapper > .shortcut-buttons-flatpickr-buttons {
+    display: -webkit-box;
     display: flex;
-    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-flow: row wrap;
 }
 
 .shortcut-buttons-flatpickr-button {

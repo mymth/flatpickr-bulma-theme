@@ -72,6 +72,7 @@ const build = (src, dest) => {
           argv.minifyOpts.split(/\s+/).reduce(addOption, minifyCmd);
         }
         minifyCmd.push(dest);
+        minifyCmd.push('--output');
         minifyCmd.push(dest.replace(/(\.\w+)$/, '.min$1'));
 
         console.info(`\n> ${minifyCmd.join(' ')}`);
@@ -80,7 +81,10 @@ const build = (src, dest) => {
       () => {
         fs.closeSync(fdDest);
       }
-    );
+    )
+    .catch((err) => {
+      console.error(err);
+    });
 };
 
 const checkSrcPath = (src) => {
