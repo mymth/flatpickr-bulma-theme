@@ -193,9 +193,16 @@
     font-size: inherit;
     line-height: inherit;
     color: inherit;
+    -moz-appearance: textfield;
 
     &::-ms-clear {
       display: none;
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
     }
   }
 

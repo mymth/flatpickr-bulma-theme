@@ -192,10 +192,16 @@
     font-size: inherit;
     line-height: inherit;
     color: inherit;
+    -moz-appearance: textfield;
 }
 
 .numInputWrapper input::-ms-clear {
     display: none;
+}
+
+.numInputWrapper input::-webkit-outer-spin-button, .numInputWrapper input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .numInputWrapper .arrowUp, .numInputWrapper .arrowDown {
