@@ -15,9 +15,9 @@ $flatpickr-weekdays-height: $size-small * 1.5 !default;
 $flatpickr-time-height: 2.25rem;
 
 // Colors
-$flatpickr-calendar-background: $white !default;
-$flatpickr-calendar-border-color: rgba($black, 0.1) !default;
-$flatpickr-calendar-shadow: 0 2px 3px $flatpickr-calendar-border-color !default;
+$flatpickr-calendar-background: $scheme-main !default;
+$flatpickr-calendar-border-color: rgba($scheme-invert, 0.1) !default;
+$flatpickr-calendar-shadow: 0 0.5em 1em -0.125em $flatpickr-calendar-border-color !default;
 
 $flatpickr-month-background: transparent !default;
 $flatpickr-month-foreground: $text-strong !default;
@@ -30,7 +30,7 @@ $flatpickr-day-foreground: $text !default;
 $flatpickr-day-hover-background: $light !default;
 
 $flatpickr-today-color: $primary !default;
-$flatpickr-today-fg-color: $white !default;
+$flatpickr-today-fg-color: $primary-invert !default;
 $flatpickr-selected-day-background: $link !default;
 $flatpickr-selected-day-foreground: $white !default;
 

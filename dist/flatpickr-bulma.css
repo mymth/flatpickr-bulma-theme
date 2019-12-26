@@ -33,7 +33,7 @@
     position: absolute;
     visibility: hidden;
     opacity: 0;
-    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
     border-radius: 4px;
     background: white;
     padding: 0 1px 1px;
@@ -405,7 +405,7 @@
 .flatpickr-day.today:hover, .flatpickr-day.today:focus {
     border-color: #00d1b2;
     background: #00d1b2;
-    color: white;
+    color: #fff;
 }
 
 .flatpickr-day.selected, .flatpickr-day.startRange, .flatpickr-day.endRange, .flatpickr-day.selected:focus, .flatpickr-day.startRange:focus, .flatpickr-day.endRange:focus, .flatpickr-day.selected:hover, .flatpickr-day.startRange:hover, .flatpickr-day.endRange:hover {
