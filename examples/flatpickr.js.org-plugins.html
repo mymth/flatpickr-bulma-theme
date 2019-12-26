@@ -68,6 +68,7 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/plugins/confirmDate/confirmDate.css"> -->
     <link rel="stylesheet" href="../dist/plugins/confirmDate.css">
     <link rel="stylesheet" href="../dist/plugins/weekSelect.css">
+    <link rel="stylesheet" href="../dist/plugins/monthSelect.css">
     <script src="https://flatpickr.js.org/javascripts/modernizr.js"></script>
 </head>
 
@@ -308,6 +309,21 @@
 };</code></pre>
                 </div>
                 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="minMaxTimePlugin"></p>
+                <h2 id="monthselectplugin"><code>monthSelectPlugin</code></h2>
+
+                <p>Show a month-only calendar view</p>
+                <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
+    plugins<span style="color:#555">:</span> [
+        <span style="color:#069;font-weight:bold">new</span> monthSelectPlugin({
+          shorthand<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>, <span style="color:#09f;font-style:italic">//defaults to false</span>
+          dateFormat<span style="color:#555">:</span> <span style="color:#c30">&#34;m.y&#34;</span>, <span style="color:#09f;font-style:italic">//defaults to &#34;F Y&#34;</span>
+          altFormat<span style="color:#555">:</span> <span style="color:#c30">&#34;F Y&#34;</span>, <span style="color:#09f;font-style:italic">//defaults to &#34;F Y&#34;</span>
+          theme<span style="color:#555">:</span> <span style="color:#c30">&#34;dark&#34;</span> <span style="color:#09f;font-style:italic">// defaults to &#34;light&#34;</span>
+        })
+    ]
+};</code></pre></div>
+                <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="monthSelectPlugin"></p>
+
                 <aside class="copyright" role="note">
                     &copy; 2018 Released under the MIT license
                 </aside>
@@ -371,6 +387,7 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/plugins/weekSelect/weekSelect.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/plugins/rangePlugin.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/plugins/minMaxTimePlugin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.3/dist/plugins/monthSelect/index.js"></script>
     <script src="https://flatpickr.js.org/flatpickr.js"></script>
     <script src="https://flatpickr.js.org/themer.js"></script>
     <script>

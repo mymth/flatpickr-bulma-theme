@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../dist/flatpickr-bulma.css">
     <link rel="stylesheet" href="../dist/plugins/confirmDate.css">
     <link rel="stylesheet" href="../dist/plugins/weekSelect.css">
+    <link rel="stylesheet" href="../dist/plugins/monthSelect.css">
     <link rel="stylesheet" href="../dist/plugins/shortcut-buttons-flatpickr.css">
     <style type="text/css">
         #menu-toggle {
@@ -91,6 +92,7 @@
                     <ul>
                         <li><a href="#plugin-confirmdate">confirmDate</a></li>
                         <li><a href="#plugin-weekSelect">weekSelect</a></li>
+                        <li><a href="#plugin-monthSelect">monthSelect</a></li>
                         <li><a href="#plugin-shortcutbuttons">Shortcut Buttons</a></li>
                     </ul>
                 </li>
@@ -543,6 +545,22 @@
                 </div>
                 <p><input class="input flatpickr" type="text" placeholder="Select Date.." data-id="weekSelect"></p>
 
+                <h3 id="plugin-monthSelect">monthSelect</h3>
+                <p>For selecting a month.</p>
+                <div class="highlight">
+                    <pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
+    plugins<span style="color:#555">:</span> [
+        <span style="color:#069;font-weight:bold">new</span> monthSelectPlugin({
+          shorthand<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>, <span style="color:#09f;font-style:italic">//defaults to false</span>
+          dateFormat<span style="color:#555">:</span> <span style="color:#c30">&#34;m.y&#34;</span>, <span style="color:#09f;font-style:italic">//defaults to &#34;F Y&#34;</span>
+          altFormat<span style="color:#555">:</span> <span style="color:#c30">&#34;F Y&#34;</span>, <span style="color:#09f;font-style:italic">//defaults to &#34;F Y&#34;</span>
+          theme<span style="color:#555">:</span> <span style="color:#c30">&#34;dark&#34;</span> <span style="color:#09f;font-style:italic">// defaults to &#34;light&#34;</span>
+        })
+    ]
+};</code></pre>
+                </div>
+                <p><input class="input flatpickr" type="text" placeholder="Select Date.." data-id="monthSelect"></p>
+
                 <h3 id="plugin-shortcutbuttons">Shortcut Buttons</h3>
                 <p><a href="https://github.com/jcsmorais/shortcut-buttons-flatpickr">Shortcut buttons</a> plugin by João Morais</p>
                 <div class="highlight">
@@ -619,6 +637,7 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/plugins/weekSelect/weekSelect.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/plugins/rangePlugin.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/plugins/minMaxTimePlugin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/plugins/monthSelect/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/shortcut-buttons-flatpickr@latest/dist/shortcut-buttons-flatpickr.js"></script>
     <!-- <script src="flatpickr.js"></script> -->
     <script type="text/javascript">
@@ -864,6 +883,16 @@
                                 maxTime: "22:00"
                             }
                         }
+                    })
+                ]
+            },
+            monthSelect: {
+                plugins: [
+                    new monthSelectPlugin({
+                      shorthand: true, //defaults to false
+                      dateFormat: "m.y", //defaults to "F Y"
+                      altFormat: "F Y", //defaults to "F Y"
+                      theme: "dark" // defaults to "light"
                     })
                 ]
             },

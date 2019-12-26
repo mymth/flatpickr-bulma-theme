@@ -178,6 +178,59 @@
   right: 0;
 }
 
+.flatpickr-monthDropdown-months {
+  // variables - see node_modules/bulma/sass/form/shared.scss
+  $input-color: $text-strong;
+  $input-background-color: $scheme-main;
+  $input-border-color: $border;
+  $input-hover-border-color: $border-hover;
+  $input-radius: $radius;
+
+  @mixin bg-image($fill-color: $text-light) {
+    background-image: url('data:image/svg+xml;charset=utf8,<svg viewBox="0 0 12 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path d="M6.019,9.975l-3.305,-3.37l0.539,-0.58l2.766,2.836l2.766,-2.836l0.539,0.58l-3.305,3.37Z" style="fill:%23#{str-slice(#{$fill-color}, 2)};fill-rule:nonzero;"/></svg>');
+  }
+
+  @extend %no-outline;
+  @include bg-image;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: block;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  background-color: $input-background-color;
+  background-position-x: right;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  border: 1px solid $input-border-color;
+  border-radius: $input-radius;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  height: calc(#{$flatpickr-month-nav-height - 0.25rem} - 2px);
+  font-size: $size-normal;
+  color: $input-color;
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  &:hover {
+    @include bg-image($input-color);
+    border-color: $input-hover-border-color;
+  }
+
+  &:focus,
+  &:active {
+    border-color: $input-border-color;
+  }
+
+  &:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+  }
+}
+
 .numInputWrapper {
   position: relative;
 

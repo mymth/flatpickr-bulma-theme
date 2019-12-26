@@ -27,6 +27,12 @@
     @extend %flatpickr-rtl-prev-next-month-button;
   }
 
+  .flatpickr-monthDropdown-months {
+    background-position-x: left;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+  }
+
   .numInputWrapper {
     .arrowUp, .arrowDown {
       @extend %flatpickr-rtl-right-side-to-left;

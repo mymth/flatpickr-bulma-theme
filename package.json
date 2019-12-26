@@ -28,6 +28,7 @@
   "devDependencies": {
     "autoprefixer": "^9.7.3",
     "bulma": "^0.8.0",
+    "css-declaration-sorter": "^5.0.0",
     "csso-cli": "^2.0.2",
     "flatpickr": "^4.6.3",
     "inflected": "^2.0.4",

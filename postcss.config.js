@@ -3,6 +3,9 @@ module.exports = {
     require('postcss-node-sass')({
       outputStyle: 'expanded',
     }),
+    require('css-declaration-sorter')({
+        order: 'concentric-css',
+    }),
     require('autoprefixer'),
   ],
 };
