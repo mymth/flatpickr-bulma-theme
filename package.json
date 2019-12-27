@@ -1,6 +1,6 @@
 {
   "name": "flatpickr-bulma-theme",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Flatpicker theme for Bulma",
   "main": "flatpickr-bulma.scss",
   "scripts": {
@@ -29,7 +29,7 @@
     "autoprefixer": "^9.7.3",
     "bulma": "^0.8.0",
     "css-declaration-sorter": "^5.0.0",
-    "csso-cli": "^2.0.2",
+    "csso-cli": "^3.0.0",
     "flatpickr": "^4.6.3",
     "inflected": "^2.0.4",
     "minimist": "^1.2.0",
