@@ -4,7 +4,7 @@
 
 ## Demo
 
-- [Demo](https://raw.githack.com/mymth/flatpickr-bulma-theme/v0.1/examples/)
+- [Demo](https://raw.githack.com/mymth/flatpickr-bulma-theme/v0.2/examples/)
 
 ## Usage
 
